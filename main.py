@@ -1,118 +1,14 @@
-# boolean: True, False
-# if elif else
+# Klaviaturadan daxil edilmiş 2-dən böyük tam ədədin sadə vururqlarının alt-alta çapı
 
-a = 24
+# n = int(input())
+# s_vuruq = 2
 
-if a >10:
-    print("1")
-    if a > 1:
-        print("2")
-else:
-    print("3")
-if a < 1:
-    print("salam")
-else:
-    print("3")
-if a<100:
-    print("2")
-else :
-    print("3")
-
-a = "salam"
-print(a.upper())
-
-b = [5,6,7,8,9,4,3,2,1]
-
-def min_num(b):
-    min_numb = b[0]
-    for i in b:
-        if i < min_numb:
-            min_numb = i
-    return min_numb
-
-c = min_num(b)
-print(c)
-
-# 61, 67, 68, 63
-
-#  61
-saaat1 = int(input("Saat1: "))
-deqiqe1 = int(input("Deqiqe1: "))
-saniye1 = int(input("saniye1: "))
-saaat2 = int(input("Saat2: "))
-deqiqe2 = int(input("Deqiqe2: "))
-saniye2 = int(input("Saniye2: "))
-s1= saaat1*3600 + deqiqe1*60 + saniye1
-s2 = saaat2*3600 +deqiqe2*60 +saniye2
-print(s2 - s1)
-
-# 63
-
-n = input() 
-m = len(n)
-if m%2 == 0:
-    print("0")
-else:
-    print(n[m//2])
-
-
-# kitab
-# 012
-#  n[2]
-
-# 67
-
-n = int(input("n: "))
-b = int(input("b: "))
-s = 0
-for i in range(1,n):
-    if i**2 % b == 0:
-        # s = s +1
-        s += 1
-print('ədədlərin sayı',s)
-
-# 68
-n = int(input()) # 3756
-s = 0
-c = 0
-while n > 0:
-    a = n % 10
-    if a % 2 != 0:
-        s = s + 1
-        c = c + a
-    n = n // 10
-print(c,s)
-
-# 66
-
-n = int(input()) #2564
-n = str(n)
-for i in n:
-    print(i)
-
-
-
-# 67
-# 1-ci method
-
-n = int(input()) # 2354
-n = str(n)
-a = int(n[1])
-b = int(n[2])
-if b%2 != 0:
-    print(a*b)
-else: 
-    print(a+b)
-
-# 2-ci method
-
-n=int(input())
-a=n//100%10
-b=n%100//10
-if b%2!=0:
-    print(a*b)
-else:
-    print(a+b)
+# while n>1:
+#     if n % s_vuruq ==0:
+#         print(s_vuruq)
+#         n = n//s_vuruq
+#     else:
+#         s_vuruq = s_vuruq + 1
 
 
 
@@ -120,13 +16,156 @@ else:
 
 
 
+# Klaviaturadan daxil edilmiş 2-dən böyük tam ədədin sadə bölənlərinin alt-alta çapı
+
+# n = int(input())
+# s_vuruq = 2
+# b = []
+# while n>1:
+#     if n % s_vuruq ==0:
+#         b.append(s_vuruq)
+#         if b.count(s_vuruq) == 1:
+#             print(s_vuruq)
+#         n = n//s_vuruq
+#     else:
+#         s_vuruq = s_vuruq + 1
+
+# Fibonacci ardıcıllığı hesablayan alqoritmi yazın. 
+# Bu alqoritmin neçən-ci Fibonacci ədədini hesabladığınızı izah edin.
+
+# def fiboncci(n):
+#     a, b = 0, 1
+#     for i in range(n): 
+#         a, b = b, a+b
+#     return b
+# n = int(input())
+# result = fiboncci(n)
+# print(result)
+
+# # 'Elnur'.upper()
+# str()
+
+
+# Verilmiş bir sıra üzrə ən kiçik ədədi tapmaq üçün bir proqram yazın. 
+# proqramınız hansı metodlardan istifadə etdiyini izah edin.
+
+# def min_num(list):
+#     min_numb = list[0]
+#     for i in range(1,len(list)):
+#         if min_numb > list[i]:
+#             min_numb = list[i]
+#     return min_numb
+
+# a = [12,18,24,30,4]
 
 
 
 
+# Bir sətir veriləndə, sətirdəki hər bir simvolların sayını tapan bir 
+# proqram yazın. Məsələn, "hello" sözünün daxilində hər bir hərfin neçə dəfə 
+# işləndiyini tapan alqoritmi yazmalısınız.
+
+# Bir listdə olan cüt ədədlərin cəmini hesablayan proqram yazın. 
+
+# *
+# **
+# ***
+# ****
+# ***** terminalda, çıxışda bunu qaytarsın
+
+# for i in range(1,6):
+#     print(i*'*')
 
 
+# list() vs split()
+# a = 'Elnur, Ülvi, Tural, Nərmin'
+# a = list(a) bütün simvolları ayırdı hissə hissə.
+# a = a.split(', ') göndərdiyim əmrə görə ayırdı.
+# print(a)  
 
 
+# 94
 
+# # 80
+# n = int(input())
+# s = 0
+# if n > 1 :
+#     for i in range(2, n//2 + 1):
+#         if n % i == 0:
+#             s = s + 1
+#     if s == 0:
+#         print('Sadədir')
+#     else:
+#         print('Mürəkkəbdir')
+# elif n == 1:
+#     print('1 nə sadədir, nə də mürəkkəb.')
+
+# 89
+
+# n = int(input())
+# s = 0
+# f = 1
+# k = -1
+# for i in range(1, n+1):
+#     f = f * i
+#     s = s + k*1/(f)**i
+#     k = -k
+# print(s)
+
+# #  90 
+
+# n = int(input())
+# s = 0
+# k = 1
+# for i in range(3, n+1,2):
+#     s = s + k*i
+#     k = -k
+# print(s)
+
+
+# # 93
+
+# n= int(input()) #2245
+# min_num = 9
+# k = 0
+# while n > 0:
+#     a = n % 10
+#     if a % 2 != 0 and min_num > a:
+#         min_num = a
+#         k = 1
+#     n = n//10
+# if k == 0:
+#     print("Ədəddə tək rəqəm yoxdur.")
+# else:
+#     print(min_num)
+
+# # 91
+# s = 0
+# for i in range(100,1000): # 123
+#     a = i // 100    #1
+#     b = i //10%10   #2
+#     c = i % 10      #3
+#     if a % 3 == 0 and b % 3 ==0 and c % 3 == 0:
+#         s = s + 1
+# print(s)
+
+# 94
+
+# 1 ci metod
+# hex_num = input()
+# digit_num = int(hex_num, base=16)
+# print(digit_num)
+
+# 10 luqdan 16 -lığa
+
+# digit_num = int(input())
+# hex_num = hex(digit_num)[2:].upper()
+# print(hex_num)
+
+# # 2 -ci metod
+# a = 'abc13231'
+# digit_num = 0
+# for i in a:
+#     if i.isalpha():
+#         digit_num = 16* digit_num + ord(i) - ord('A') + 10
 
