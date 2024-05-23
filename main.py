@@ -169,3 +169,33 @@
 #     if i.isalpha():
 #         digit_num = 16* digit_num + ord(i) - ord('A') + 10
 
+
+
+# f1 = 1
+# f2 = 1
+# n = int(input())
+# i = 2
+# while i<n:
+#     s = f2 + f1
+#     f1 = f2
+#     f2 = s
+#     i = i +1
+
+# print(s)
+
+# a = [12,19,15,45,67]
+# b = a
+# del a[2]
+# b.append('salam')
+# b = b + [10,15]
+# a.remove(a[len(a)-1])
+# print(a)
+# print(b)
+
+# n = input()
+# s = 0
+# for i in n:
+#     if  'A' <= i <= 'Z':
+#         s = s + 1
+# print(s) 
+
